@@ -1,2 +1,3 @@
 # denkmalmit.org
-Website for the denkmal.org association.
+
+Static website for the denkmal.org association.
