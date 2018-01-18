@@ -90,8 +90,13 @@ h3 {
   margin-top: 2em;
 }
 
-h3 + p {
+h3 + p,
+h4 + p {
   margin-top: 0;
+}
+
+h4 {
+  margin-bottom: 0.3em;
 }
 
 .logo {
@@ -112,4 +117,21 @@ h3 + p {
 
 .screenshots {
   margin-top: 1em;
+}
+
+.supporter {
+  padding: 0;
+}
+
+.supporter > li {
+  display: inline;
+  font-style: italic;
+}
+
+.supporter > li:not(:last-child)::after {
+  content: ' • ';
+}
+
+.supporter > li.♥::after {
+  content: ' ♥ • ';
 }
