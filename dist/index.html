@@ -34,8 +34,8 @@
       <h3>Denkmal.org</h3>
       <p>Die Adresse für Basels Nachtschwärmer. Denkmal.org präsentiert jeweils sieben Tage im Voraus ausgewählte Veranstaltungen.
         Schwerpunkt liegt auf Konzerten und Parties. Dabei wird grossen Wert auf Unabhängigkeit gelegt: Es wird keine Werbung
-        geschaltet und es werden, wenn überhaupt, nur bedingungslose Beiträge von Veranstaltern entgegengenommen. Kleine
-        wie grosse Clubs erhalten dieselbe Aufmerksamkeit.</p>
+        geschaltet und es werden nur bedingungslose Beiträge von Veranstaltern entgegengenommen. Kleine wie grosse Clubs
+        erhalten dieselbe Aufmerksamkeit.</p>
       <img class="screenshots" src="images/denkmal-mobile-stripe.jpg" alt="Mobile">
       <p>
         Durch die Nacht mit Denkmal.org™
@@ -46,21 +46,94 @@
       <h3>Wir brauchen Deine Hilfe!</h3>
       <p>Wegen veränderten personellen, finanziellen und technischen Begebenheiten sind wir nicht mehr in der Lage das Projekt
         wie gewohnt weiterzuführen und suchen deshalb nach Unterstützung um die Zukunft von Denkmal.org zu sichern. Mit deinem
-        Beitrag können wir die Plattform auf den neusten technischen Stand bringen.
-        <a href="https://gdoc.pub/doc/e/2PACX-1vTfg2-qsKovLZ2Xxuum9Cz9xiJPF6pyfCDiq4WPnZPPzyWCFy4yPsP5Ge9qo89kyEkL28EC5wMsR-ND" target="_blank"
-          rel="noopener">Zum Dossier</a>
-      </p>
-
+        Beitrag können wir die Plattform auf den neusten technischen Stand bringen. Nebst einer einmaligen Zuwendung gibt
+        es die Möglichkeit uns langfristig zu unterstützen indem Du Mitglied im
+        <a href="#association">Verein</a> wirst. ♥ </p>
       <p>
         <em>Spendenkonto folgt in Kürze.</em>
       </p>
 
+      <h4>Für Nerds</h4>
+      <ul class="crypto">
+        <li>
+          <label for="bitcoin">Bitcoin (BTC)</label>
+          <input id="bitcoin" type="text" value="3499tkbuTCjYaMDye6bse7GvcEJrhXAK9e" />
+          <a href="javascript:;" class="icon copy" alt="Copy Address"></a>
+        </li>
+        <li>
+          <label>Ethereum (ETH)</label>
+          <input type="text" value="0x1de405cDD0Bc079847003750490Ea6234Ea57c45" />
+          <a href="javascript:;" class="icon copy" alt="Copy Address"></a>
+        </li>
+        <li>
+          <label>Dogecoin (DOGE)</label>
+          <input type="text" value="D9GsaaGHBbEMo4VQLShUb9WxMh1inXNgio" />
+          <a href="javascript:;" class="icon copy" alt="Copy Address"></a>
+        </li>
+        <li>
+          <label>Litecoin (LTC)</label>
+          <input type="text" value="MCJBx6wQ1LNzysodt3tzfNkHcKjizMpeNU" />
+          <a href="javascript:;" class="icon copy" alt="Copy Address"></a>
+        </li>
+        <li>
+          <label>Dash (DASH)</label>
+          <input type="text" value="Xh3NaTs4dbfXVCEHKKmfZC7NKD5xxJ9WdF" />
+          <a href="javascript:;" class="icon copy" alt="Copy Address"></a>
+        </li>
+        <li>
+          <label>Cardano (ADA)</label>
+          <input type="text" value="DdzFFzCqrht2pSYxQEWMHgbpCR5PXeGmdGPUeorbNR6gbbqiKV3dLjdFZQCtAH8UwvfgPSRK51vhotziJEBrKP8SyBnRMycPPtXi7Uun"
+          />
+          <a href="javascript:;" class="icon copy" alt="Copy Address"></a>
+        </li>
+        <li>
+          <label>Monero (XMR)</label>
+          <input type="text" value="4HJNXGgD24fWZ7wk8DGxLRhVD4wMhGH8s64WzoF3yAKg72442jY2fQEhFXbe6poDwULgeXbkSo4WFbNLZARajuJ7RzwfLxbiij7ND3rLTg"
+          />
+          <a href="javascript:;" class="icon copy" alt="Copy Address"></a>
+        </li>
+      </ul>
+      <script>
+        (function () {
+          var links = document.querySelectorAll('.crypto a');
+          links.forEach(function (element) {
+            element.onclick = function (element) {
+              var el = element.currentTarget.previousElementSibling
+              el.select();
+              document.execCommand("Copy");
+            };
+          });
+        })();
+      </script>
       <!-- <p>
         <strong class="semibold">IBAN:</strong>
         <span>CH22 2222 2222 2222 2222</span>
       </p>
 
       <a href="#" class="button" target="_blank" rel="noopener">PayPal</a> -->
+
+      <h3 id="association">Verein</h3>
+      <p>Mit dem Verein
+        <em>Denkmalmit</em> möchten wir sicherstellen, dass die Webseite noch viele Jahre der Ort bleibt, wo sich Junge und Junggebliebene
+        über das allabendliche Musik- und Partyprogramm informieren.
+        <a href="https://gdoc.pub/doc/e/2PACX-1vRekflQDyBOPSFqfl472WVetOpCDI5w2GKr2odfgP7ynrDI9kFGtUID4igCWQGvnI_zoMqhq5-mVLcw" target="_blank"
+          rel="noopener">Statuten</a>
+      </p>
+      <div>Möchtest du aktiv mitmachen (kein Mitgliederbeitrag), dich als Gönner beteiligen oder einfach nur auf dem Laufenden
+        bleiben? Mach mit! Mitgliederbeiträge werden einmal pro Jahr erhoben.</div>
+      <ul>
+        <li>Einzelperson:
+          <span>CHF 50</span>
+        </li>
+        <li>Veranstalter/Organisation:
+          <span>CHF 100</span>
+        </li>
+        <li>StudentIn, abgebrandt, im Lotto gewonnen?:
+          <span>Freier Betrag</span>
+        </li>
+      </ul>
+      <a class="button" href="https://docs.google.com/forms/d/1ehHPEYdSSaZX5rSQNMfOwCZNYsHUPvsDuG2zVc3oVd4/edit" target="_blank"
+        rel="noopener">Mitglied werden</a>
 
       <h3>Team</h3>
       <div>
@@ -79,21 +152,6 @@
         Frederick Dürr -
         <em>Administration & Redaktion Denkmal.org</em>
       </div>
-
-      <h3>Verein</h3>
-      <p>Mit dem Verein
-        <em>Denkmalmit</em> möchten wir sicherstellen, dass die Webseite noch viele Jahre der Ort bleibt, wo sich Junge und Junggebliebene
-        über das abendliche Musik- und Partyprogramm informieren.
-        <a href="https://gdoc.pub/doc/e/2PACX-1vRekflQDyBOPSFqfl472WVetOpCDI5w2GKr2odfgP7ynrDI9kFGtUID4igCWQGvnI_zoMqhq5-mVLcw" target="_blank"
-          rel="noopener">Statuten</a>
-      </p>
-      <p>Möchtest du aktiv mitmachen, dich als Gönner beteiligen oder einfach nur auf dem Laufenden bleiben? Melde Dich! (Das
-        Formular ist
-        <strong>unverbindlich</strong> - wir melden uns bei Dir!)
-      </p>
-      <a class="button" href="https://docs.google.com/forms/d/1ehHPEYdSSaZX5rSQNMfOwCZNYsHUPvsDuG2zVc3oVd4/edit" target="_blank"
-        rel="noopener">Umfrage Mitgliedschaft</a>
-
 
       <h3>Unterstützer</h3>
       <p>Wir danken folgenden Personen (und auch allen, die anonym bleiben wollen) herzlichst für die ideelle und/oder materielle
@@ -119,7 +177,7 @@
         <li>Pablo Schmid</li>
         <li>Programmzeitung</li>
         <li>RadioX</li>
-        <li>Christophe Gaiser, Abteilung Kultur BS</li>
+        <li>cometas</li>
         <li>Nachtstadtplan</li>
         <li>Jukebox</li>
         <li>TagesWoche</li>

@@ -19,15 +19,19 @@ img {
   max-width: 100%;
 }
 
-main a:not(.button)::before {
+main a:not(.button):not(.icon)::before {
   content: '';
   background-color: #7db3a89c;
   position: absolute;
   bottom: 2px;
   left: 0;
   height: 6px;
-  width: calc(100% - 22px);
+  width: 100%;
   z-index: -1;
+}
+
+main [target='_blank']:not(.button):not(.icon)::before {
+  width: calc(100% - 22px);
 }
 
 main [target='_blank']:not(.button)::after {
@@ -41,6 +45,19 @@ main [target='_blank']:not(.button)::after {
   position: relative;
   bottom: -3px;
   width: 16px;
+}
+
+.icon {
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-flex;
+  height: 16px;
+  position: relative;
+  width: 16px;
+}
+
+.icon.copy {
+  background-image: url('images/copy.svg');
 }
 
 .semibold {
@@ -124,6 +141,42 @@ h4 {
 
 .screenshots {
   margin-top: 1em;
+}
+
+.crypto {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.crypto li {
+  align-items: center;
+  display: flex;
+  margin-bottom: 0.1em;
+  position: relative;
+  font-size: 0.9em;
+}
+
+.crypto label {
+  margin-right: 5px;
+  width: 150px;
+}
+
+.crypto label::after {
+  content: ':';
+}
+
+.crypto input {
+  padding: 5px 30px 5px 12px;
+  flex-grow: 1;
+  font-size: inherit;
+}
+
+.crypto a {
+  opacity: 0.6;
+  position: absolute;
+  right: 0;
+  padding: 2px 12px;
 }
 
 .supporter {
