@@ -30,11 +30,11 @@ main a:not(.button):not(.icon)::before {
   z-index: -1;
 }
 
-main [target='_blank']:not(.button):not(.icon)::before {
+p [target='_blank']:not(.button):not(.icon)::before {
   width: calc(100% - 22px);
 }
 
-main [target='_blank']:not(.button)::after {
+p [target='_blank']:not(.button)::after {
   background-image: url('images/external.svg');
   background-size: contain;
   background-repeat: no-repeat;
@@ -180,17 +180,17 @@ h4 {
   padding: 2px 12px;
 }
 
-.supporter {
+ul {
   padding: 0;
 }
 
-.supporter > li {
+li {
   display: inline;
   font-style: italic;
   white-space: nowrap;
 }
 
-.supporter > li:not(:last-child)::after {
+ul > li:not(:last-child)::after {
   content: ' • ';
 }
 
