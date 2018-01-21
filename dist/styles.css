@@ -180,17 +180,20 @@ h4 {
   padding: 2px 12px;
 }
 
-ul {
+.team,
+.supporter {
   padding: 0;
 }
 
-li {
+.team > li,
+.supporter > li {
   display: inline;
   font-style: italic;
   white-space: nowrap;
 }
 
-ul > li:not(:last-child)::after {
+.team > li:not(:last-child)::after,
+.supporter > li:not(:last-child)::after {
   content: ' • ';
 }
 
