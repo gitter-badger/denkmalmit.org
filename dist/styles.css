@@ -19,6 +19,10 @@ img {
   max-width: 100%;
 }
 
+section {
+  position: relative;
+}
+
 main a:not(.button):not(.icon)::before {
   content: '';
   background-color: #7db3a89c;
@@ -45,6 +49,24 @@ p [target='_blank']:not(.button)::after {
   position: relative;
   bottom: -3px;
   width: 16px;
+}
+
+h3 {
+  border-bottom: 2px solid;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+  padding-top: 2em;
+  padding-bottom: 0.1em;
+}
+
+h3 + p,
+h4 + p {
+  margin-top: 0;
+}
+
+h4 {
+  margin-top: 2em;
+  margin-bottom: 0.3em;
 }
 
 .icon {
@@ -107,21 +129,6 @@ p [target='_blank']:not(.button)::after {
   p {
     text-align: justify;
   }
-}
-
-h3 {
-  margin-bottom: 0.4em;
-  margin-top: 2em;
-}
-
-h3 + p,
-h4 + p {
-  margin-top: 0;
-}
-
-h4 {
-  margin-top: 2em;
-  margin-bottom: 0.3em;
 }
 
 .logo {
@@ -211,25 +218,18 @@ h4 {
   content: ' ♥ • ';
 }
 
-.donate {
-  background-color: rgb(251, 251, 251);
-  border: 1px dashed #ad940e;
-  margin-top: 4em;
-  margin-bottom: 3em;
-  margin-left: -15px;
-  padding-left: 15px;
-  margin-right: -15px;
-  padding-right: 15px;
-  position: relative;
-  z-index: 1;
-}
-
-.donate h3 {
+#donate h3 {
   color: #ad940e;
-  margin-top: 0.8em;
 }
 
-.donate-address {
+#donate .donate-address {
   display: block;
   font-size: 0.8em;
+}
+
+#association h3 {
+  background-image: url('images/family.svg');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 70px;
 }
