@@ -6,6 +6,7 @@ body {
   font-family: 'Open Sans', Arial, sans-serif;
   margin: 0;
   padding: 0;
+  color: rgb(29, 29, 29);
 }
 
 a {
@@ -13,6 +14,10 @@ a {
   text-decoration: none;
   position: relative;
   white-space: nowrap;
+}
+
+strong {
+  font-weight: 600;
 }
 
 img {
@@ -69,6 +74,10 @@ h4 {
   margin-bottom: 0.3em;
 }
 
+h5 {
+  margin-bottom: 0.5em;
+}
+
 .icon {
   background-size: contain;
   background-repeat: no-repeat;
@@ -94,7 +103,7 @@ h4 {
 
 .boundaries {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 820px;
   width: 100%;
 }
 
@@ -152,6 +161,80 @@ h4 {
   margin-top: 1em;
 }
 
+.inspiration {
+  border: 1px dashed;
+  margin-top: 2em;
+  padding: 15px;
+}
+
+.inspiration h5 {
+  margin-top: 0.2em;
+}
+
+.inspiration ul {
+  font-size: 0.8em;
+  margin: 0;
+  padding: 0;
+}
+
+.inspiration li {
+  display: flex;
+  list-style-type: none;
+  margin-bottom: 0.3em;
+}
+
+.inspiration .amount {
+  display: inline-block;
+  flex-shrink: 0;
+  font-weight: bold;
+  margin-right: 12px;
+  text-align: right;
+  width: 45px;
+}
+
+.inspiration .reward::after {
+  content: ')';
+}
+.inspiration .reward::before {
+  content: '(';
+}
+
+.inspiration .asteriks {
+  font-size: 0.7em;
+  margin-top: 1em;
+  padding-left: 57px;
+  width: 90%;
+}
+
+.payment {
+  background-color: #afd2ca21;
+  border: 1px solid #afd2ca;
+  padding: 12px 12px 12px;
+}
+
+.row:first-child > div:first-of-type h5 {
+  margin-top: 0.4em;
+}
+
+@media (min-width: 760px) {
+  .row {
+    display: flex;
+  }
+
+  .row > div {
+    flex-basis: 50%;
+    width: 50%;
+  }
+
+  .row:first-child > div h5 {
+    margin-top: 0.4em;
+  }
+
+  .row > div:first-of-type {
+    padding-right: 40px;
+  }
+}
+
 .crypto {
   margin-bottom: 1em;
 }
@@ -160,6 +243,7 @@ h4 {
   display: flex;
   flex-direction: column;
   margin-top: 0;
+  margin-bottom: 0;
   padding: 0;
 }
 
@@ -173,7 +257,7 @@ h4 {
 
 .crypto label {
   margin-right: 5px;
-  width: 150px;
+  width: 120px;
 }
 
 .crypto label::after {
@@ -195,6 +279,10 @@ h4 {
   position: absolute;
   right: 0;
   padding: 2px 12px;
+}
+
+.crypto-more {
+  float: right;
 }
 
 .team,
