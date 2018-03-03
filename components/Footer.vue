@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer">
+  <footer id="footer">
     <div class="boundaries">
       © {{ year }} denkmalmit.org |
       <a href="https://denkmal.org" target="_blank" rel="noopener">Denkmal.org</a>
@@ -24,8 +24,12 @@ export default {
   })
 }
 </script>
-<style>
-.footer a {
-  color: var(--color-brand);
+<style lang="scss">
+#footer {
+  padding-bottom: 1em;
+
+  a {
+    color: var(--color-link);
+  }
 }
 </style>

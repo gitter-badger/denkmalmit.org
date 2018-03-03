@@ -23,14 +23,12 @@ export default {
 </script>
 
 <style lang="scss">
-:root {
-  --color-brand: #89a7a1;
-  --color-primary: rgb(29, 29, 29);
-}
-
 html {
   color: var(--color-primary);
   font-family: 'Open Sans', Arial, sans-serif;
+
+  --color-link: #445a56;
+  --color-primary: rgb(29, 29, 29);
 }
 
 body {
