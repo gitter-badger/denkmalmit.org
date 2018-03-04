@@ -25,11 +25,11 @@ export default {
   }),
   mounted() {
     this.offsetSticky = document.querySelector('#header .sticky').offsetTop
-    const basicScroll = require('basicScroll')
     const instance = basicScroll.create({
       elem: document.querySelector('#header'),
       from: 'top-top',
       to: 'bottom-top',
+      direct: true,
       props: {
         '--opacityDecrease': {
           from: .99,
@@ -82,7 +82,7 @@ export default {
     background-position: center;
     content: '';
     height: 100%;
-    opacity: var(--opacityDecrease);
+    opacity: calc(var(--opacityDecrease) - 0.2);
     position: absolute;
     top: 0;
     width: 100%;

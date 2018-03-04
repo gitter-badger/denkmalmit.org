@@ -83,7 +83,6 @@ export default {
     Donate
   },
   mounted() {
-    const basicScroll = require('basicScroll');
     const sections = [];
 
     document.querySelectorAll('.reveal').forEach((elem, i) => {
