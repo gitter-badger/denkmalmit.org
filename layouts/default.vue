@@ -1,7 +1,7 @@
 <template>
   <div>
     <app-header/>
-    <main class="main">
+    <main id="main">
       <div class="boundaries">
         <nuxt/>
       </div>
@@ -80,6 +80,7 @@ p {
   &[target='_blank']:not(.button):not(.icon)::before {
     width: calc(100% - 22px);
   }
+
   &[target='_blank']:not(.button)::after {
     background-image: url('/images/external.svg');
     background-size: contain;
@@ -133,9 +134,8 @@ h5 {
   font-weight: 600;
 }
 
-.header,
-.main,
-.footer {
+#main,
+#footer {
   padding: 15px 5vw;
 }
 
@@ -153,7 +153,6 @@ h5 {
   align-items: center;
   background-color: white;
   border: 2px solid currentColor;
-  border-radius: 4px;
   color: black;
   display: inline-flex;
   justify-content: center;
