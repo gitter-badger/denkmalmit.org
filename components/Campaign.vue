@@ -20,11 +20,6 @@
                       <i class="fab fa-twitter"></i>
                     </network>
                   </a>
-                  <a href="javascript:;" alt="Whatsapp">
-                    <network network="whatsapp">
-                      <i class="fab fa-whatsapp"></i>
-                    </network>
-                  </a>
                 </div>
               </social-sharing>
             </div>
