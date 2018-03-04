@@ -1,6 +1,6 @@
 <template>
   <section id="donate">
-    <h3>Spendenaufruf für Denkmal.org 2.0 &#128176; &#128184; &#3647;</h3>
+    <h3>Unterstützung für Denkmal.org 2.0</h3>
     <p>Denkmal.org steht vor dem Aus. Das zurzeit verwendete PHP-Framework, auf welchem die Webseite aufgebaut ist, beruht auf veralteter Technik und wird nicht mehr gewartet. Deshalb suchen wir finanzielle Unterstützung, um die Plattform auf den neusten technischen Stand zu bringen. Wir rechnen mit ca. 400 Arbeitsstunden - dieser Aufwand übersteigt den Rahmen eines ehrenamtlichen Engagements.
       <a href="https://gdoc.pub/doc/e/2PACX-1vTfg2-qsKovLZ2Xxuum9Cz9xiJPF6pyfCDiq4WPnZPPzyWCFy4yPsP5Ge9qo89kyEkL28EC5wMsR-ND" target="_blank" rel="noopener">Mehr erfahren</a>. Nebst einer einmaligen Zuwendung, gibt es die Möglichkeit, uns langfristig zu unterstützen. Werde Mitglied im
       <a href="#association">Verein</a>.
@@ -98,16 +98,9 @@
           </div>
         </li>
         <li>
-          <span class="amount">10.-</span>
+          <span class="amount">15.-</span>
           <div>
-            <span class="label">Bin ein kleiner Sparfuchs, aber ich unterstütze Denkmal.org trotzdem gerne. Barkeepers nehmt euch in Acht - zwei Wochen kein Trinkgeld von mir.</span>&nbsp;
-            <strong class="reward">Double High Five</strong>
-          </div>
-        </li>
-        <li>
-          <span class="amount">20.-</span>
-          <div>
-            <span class="label">Denkmal.org ist mir 4 Stangen wert. (Oder ca. 36 Anker).</span>&nbsp;
+            <span class="label">Denkmal.org ist mir 3 Stangen wert. (Oder ca. 24 Anker).</span>&nbsp;
             <strong class="reward">Wir stossen auf dich an</strong>
           </div>
         </li>
@@ -119,17 +112,10 @@
           </div>
         </li>
         <li>
-          <span class="amount">30.-</span>
-          <div>
-            <span class="label">Ich trinke nächsten Samstag nur Wasser. Hier, nehmt meine Kohle.</span>
-            <strong class="reward">Dein Körper wirds dir danken</strong>
-          </div>
-        </li>
-        <li>
           <span class="amount">50.-</span>
           <div>
-            <span class="label">Sagt meiner Frau nix davon bitte, und danke für die geilen Tipps, ich nutze euch ständig.</span>
-            <strong class="reward">1x Alibi</strong>
+            <span class="label">Ich trinke nächsten Samstag nur Wasser. Hier, nehmt meine Kohle.</span>&nbsp;
+            <strong class="reward">Dein Körper wirds dir danken</strong>
           </div>
         </li>
         <li>
@@ -142,14 +128,14 @@
         <li>
           <span class="amount">250.-</span>
           <div>
-            <span class="label">I'm up all night to get lucky.</span>
+            <span class="label">I'm up all night to get lucky.</span>&nbsp;
             <strong class="reward">1x Denkmal.org T-Shirt aka Wingman-Service</strong>
           </div>
         </li>
         <li>
           <span class="amount">500.-</span>
           <div>
-            <span class="label">Ich hab mein eigenes Bermudadreieck.</span>
+            <span class="label">Ich hab mein eigenes Bermudadreieck.</span>&nbsp;
             <strong class="reward">1x Bermudadreieck mit dem Denkmal-Team</strong>
           </div>
         </li>
