@@ -14,7 +14,8 @@
   },
   "dependencies": {
     "nuxt": "^1.0.0",
-    "sheetsu-node": "^0.0.7"
+    "sheetsu-node": "^0.0.7",
+    "underscore": "^1.8.3"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

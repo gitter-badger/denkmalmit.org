@@ -10,7 +10,7 @@
 
     <donate/>
 
-    <section id="association">
+    <section id="association" class="reveal">
       <h3>Verein aka Clüb Denkmalmit</h3>
       <p>
         <em>Denkmalmit</em>
@@ -44,7 +44,7 @@
       <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSecptumZAPUwRP7wSV5amiUocH60AMnJmuuY-fR0_R00PE4GQ/viewform?usp=sf_link" target="_blank" rel="noopener">Mitglied werden</a>
     </section>
 
-    <section id="denkmalorg">
+    <section id="denkmalorg" class="reveal">
       <h3>Denkmal.org - Waaaaaas?</h3>
       <p>Denkmal.org heisst die Adresse für Basels Nachtschwärmer. Auf der Webseite entstand im Jahr 2004 ein Veranstaltungskalender, der Musikveranstaltungen im Raum Basel für die nächsten sieben Tage aufbereitet und übersichtlich darstellt. Inhaltlich bildet Denkmal.org ein breites Musikspektrum verschiedenster Genres ab. Dabei wird grossen Wert auf Unabhängigkeit gelegt: Es wird keine Werbung geschaltet und es werden nur bedingungslose Beiträge von Veranstaltern entgegengenommen. Kleine und grosse Clubs erhalten dieselbe Aufmerksamkeit. So widerspiegelt das Projekt die kulturelle Vielfalt von Basel und erfreut sich in unterschiedlichsten Kreisen einer stets wachsenden Beliebtheit.
       </p>
@@ -55,7 +55,7 @@
       <a class="button" href="https://denkmal.org" target="_blank" rel="noopener">Was loift? Denkmal.org</a>
     </section>
 
-    <supporter/>
+    <supporter class="reveal" />
 
     <section id="team">
       <h3>Team</h3>
@@ -81,11 +81,43 @@ export default {
   components: {
     Supporter,
     Donate
+  },
+  mounted() {
+    const sections = [];
+
+    document.querySelectorAll('.reveal').forEach((elem, i) => {
+
+      sections.push(basicScroll.create({
+        elem: elem,
+        from: 'top-bottom',
+        to: 'top-middle',
+        direct: true,
+        props: {
+          '--sectionOpacity': {
+            from: .01,
+            to: .99
+          },
+          '--ty': {
+            from: '20px',
+            to: 0
+          }
+        }
+      }))
+    });
+    sections.forEach((section) => section.start())
   }
 }
 </script>
 
 <style lang="scss">
+.reveal {
+  opacity: var(--sectionOpacity);
+  transform: translateY(var(--ty));
+  transition: transform 0.1s;
+  will-change: transform;
+  will-change: opacity;
+}
+
 #association h3 {
   background-image: url('/images/family.svg');
   background-repeat: no-repeat;

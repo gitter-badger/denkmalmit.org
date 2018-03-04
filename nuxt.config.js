@@ -100,6 +100,12 @@ module.exports = {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css?family=Open+Sans:400,600,700'
       }
+    ],
+    script: [
+      {
+        src:
+          'https://cdn.jsdelivr.net/npm/basicscroll@2.0.0/dist/basicScroll.min.js'
+      }
     ]
   },
   /*
@@ -118,6 +124,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    vendor: ['underscore'],
     /*
     ** Run ESLint on save
     */
