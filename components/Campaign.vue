@@ -5,10 +5,10 @@
       <carousel :perPage=1>
         <slide v-for="n in 6" :key=n>
           <div class="poster">
-            <img :src="`/images/campaign/a${n}.jpg`" alt="Kampagne">
+            <img :src="`/images/campaign/denkmal${n}.jpg`" alt="Kampagne">
             <div class="poster-share">
               <div class="label">Teilen</div>
-              <social-sharing :url="`https://denkmalmit.org/images/campaign/a${n}.jpg`" title="Denkmal.org" description="Denkmal.org - Der Musik- und Partykalender für Basel" quote="Musik- und Partykalender für Basel" hashtags="denkmalmit, denkmal, basel" twitter-user="denkmal_basel" inline-template>
+              <social-sharing :url="`https://denkmalmit.org/images/campaign/denkmal${n}.jpg`" title="Denkmal.org" description="Denkmal.org - Der Musik- und Partykalender für Basel" quote="Musik- und Partykalender für Basel" hashtags="denkmalmit, denkmal, basel" twitter-user="denkmal_basel" inline-template>
                 <div class="icons">
                   <network network="facebook">
                     <i class="fab fa-facebook"></i>
