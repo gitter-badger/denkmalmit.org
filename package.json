@@ -15,7 +15,9 @@
   "dependencies": {
     "nuxt": "^1.0.0",
     "sheetsu-node": "^0.0.7",
-    "underscore": "^1.8.3"
+    "underscore": "^1.8.3",
+    "vue-carousel": "^0.6.9",
+    "vue-social-sharing": "^2.3.3"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

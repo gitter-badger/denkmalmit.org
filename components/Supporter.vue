@@ -17,7 +17,7 @@
 
     <div class="supporter-official">
       <figure>
-        <img src="/images/supporter/kultur-bs.svg" alt="">
+        <img src="/images/supporter/kultur-bs.svg" alt="Kultur BS">
         <figcaption>Unterstützt durch die Abteilung Kultur Basel-Stadt</figcaption>
       </figure>
     </div>
