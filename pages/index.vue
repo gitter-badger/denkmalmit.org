@@ -44,6 +44,8 @@
       <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSecptumZAPUwRP7wSV5amiUocH60AMnJmuuY-fR0_R00PE4GQ/viewform?usp=sf_link" target="_blank" rel="noopener">Mitglied werden</a>
     </section>
 
+    <campaign class="reveal" />
+
     <section id="denkmalorg" class="reveal">
       <h3>Denkmal.org - Waaaaaas?</h3>
       <p>Denkmal.org heisst die Adresse für Basels Nachtschwärmer. Auf der Webseite entstand im Jahr 2004 ein Veranstaltungskalender, der Musikveranstaltungen im Raum Basel für die nächsten sieben Tage aufbereitet und übersichtlich darstellt. Inhaltlich bildet Denkmal.org ein breites Musikspektrum verschiedenster Genres ab. Dabei wird grossen Wert auf Unabhängigkeit gelegt: Es wird keine Werbung geschaltet und es werden nur bedingungslose Beiträge von Veranstaltern entgegengenommen. Kleine und grosse Clubs erhalten dieselbe Aufmerksamkeit. So widerspiegelt das Projekt die kulturelle Vielfalt von Basel und erfreut sich in unterschiedlichsten Kreisen einer stets wachsenden Beliebtheit.
@@ -74,13 +76,15 @@
 </template>
 
 <script>
+import Campaign from '~/components/Campaign'
 import Donate from '~/components/Donate'
 import Supporter from '~/components/Supporter'
 
 export default {
   components: {
-    Supporter,
-    Donate
+    Campaign,
+    Donate,
+    Supporter
   },
   mounted() {
     const sections = [];

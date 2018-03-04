@@ -105,6 +105,10 @@ module.exports = {
       {
         src:
           'https://cdn.jsdelivr.net/npm/basicscroll@2.0.0/dist/basicScroll.min.js'
+      },
+      {
+        defer: true,
+        src: 'https://use.fontawesome.com/releases/v5.0.8/js/all.js'
       }
     ]
   },
@@ -117,6 +121,9 @@ module.exports = {
     {
       src: '~plugins/ga.js',
       ssr: false
+    },
+    {
+      src: '~/plugins/vueSocialSharing.js'
     }
   ],
 
