@@ -5,21 +5,17 @@
       <carousel :perPage=1>
         <slide v-for="n in 6" :key=n>
           <div class="poster">
-            <img :src="`/images/campaign/${n}.jpg`" alt="Kampagne">
+            <img :src="`/images/campaign/a${n}.jpg`" alt="Kampagne">
             <div class="poster-share">
               <div class="label">Teilen</div>
-              <social-sharing :url="`https://denkmalmit.org/images/campaign/${n}.jpg`" title="Denkmal.org" description="Musik- und Partykalender für Basel" quote="Musik- und Partykalender für Basel" hashtags="denkmalmit, denkmal, basel" twitter-user="denkmal_basel" inline-template>
+              <social-sharing :url="`https://denkmalmit.org/images/campaign/a${n}.jpg`" title="Denkmal.org" description="Denkmal.org - Der Musik- und Partykalender für Basel" quote="Musik- und Partykalender für Basel" hashtags="denkmalmit, denkmal, basel" twitter-user="denkmal_basel" inline-template>
                 <div class="icons">
-                  <a href="javascript:;" alt="Facebook">
-                    <network network="facebook">
-                      <i class="fab fa-facebook"></i>
-                    </network>
-                  </a>
-                  <a href="javascript:;" alt="Twitter">
-                    <network network="twitter">
-                      <i class="fab fa-twitter"></i>
-                    </network>
-                  </a>
+                  <network network="facebook">
+                    <i class="fab fa-facebook"></i>
+                  </network>
+                  <network network="twitter">
+                    <i class="fab fa-twitter"></i>
+                  </network>
                 </div>
               </social-sharing>
             </div>
@@ -84,8 +80,9 @@ export default {
         display: flex;
         font-size: 1.2em;
 
-        a {
+        span {
           padding: 7px;
+          cursor: pointer;
         }
       }
     }
