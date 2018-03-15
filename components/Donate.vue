@@ -93,7 +93,7 @@
         <li>
           <span class="amount">5.-</span>
           <div>
-            <span class="label">Aufgewacht mit Filmriss, Döner in der Hand, leerem Portmonnaie und Kater meines Lebens. Mehr geht nicht, sorry Jungs.</span>&nbsp;
+            <span class="label">Aufgewacht mit Filmriss, leerem Portmonnaie und Kater meines Lebens. Mehr geht nicht, sorry Jungs.</span>&nbsp;
             <strong class="reward">High Five</strong>
           </div>
         </li>
