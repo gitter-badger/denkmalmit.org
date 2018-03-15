@@ -53,7 +53,6 @@ export default {
       }
     },
     sheetsuError: function (data) {
-      console.log(data)
       this.error = true;
     }
   },
