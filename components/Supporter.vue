@@ -8,7 +8,7 @@
         {{ item.name }} {{ item.heart }}
       </li>
     </ul>
-    <div v-else>
+    <div v-else-if="!error">
       <spinner/>
     </div>
     <div class="error" v-if="error">
@@ -45,9 +45,15 @@ export default {
   }),
   methods: {
     sheetsuSuccess: function (data) {
-      this.supporter = JSON.parse(data);
+      var parsedData = JSON.parse(data);
+      if (parsedData.hasOwnProperty('error')) {
+        this.error = true;
+      } else {
+        this.supporter = parsedData;
+      }
     },
     sheetsuError: function (data) {
+      console.log(data)
       this.error = true;
     }
   },

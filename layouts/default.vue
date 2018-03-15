@@ -147,6 +147,7 @@ h5 {
 
 .error {
   color: red;
+  text-align: center;
 }
 
 .button {
