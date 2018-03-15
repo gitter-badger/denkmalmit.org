@@ -20,6 +20,9 @@
         <img src="/images/supporter/kultur-bs.svg" alt="Kultur BS">
         <figcaption>Unterstützt durch die Abteilung Kultur Basel-Stadt</figcaption>
       </figure>
+      <figure class="wide">
+        <img src="/images/supporter/sulger-stiftung.svg" alt="Sulger Stiftung">
+      </figure>
     </div>
   </section>
 </template>
@@ -78,9 +81,20 @@ export default {
 }
 
 .supporter-official {
+  align-items: center;
+  display: flex;
+
   figure {
     margin: 2em 0.2em;
     width: 150px;
+
+    &:not(:first-child) {
+      margin-left: 2em;
+    }
+
+    &.wide {
+      width: 230px;
+    }
   }
   img {
     width: 90%;
