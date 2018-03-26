@@ -23,6 +23,9 @@
       <figure class="wide">
         <img src="/images/supporter/sulger-stiftung.svg" alt="Sulger Stiftung">
       </figure>
+      <figure class="wide">
+        <img src="/images/supporter/buergergemeinde-bs.svg" alt="Bürgergemeinde Basel">
+      </figure>
     </div>
   </section>
 </template>
@@ -88,14 +91,13 @@ export default {
 .supporter-official {
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
+  margin-top: 2em;
+  margin-bottom: 2em;
 
   figure {
-    margin: 2em 0.2em;
+    margin: 0.8em 1em;
     width: 150px;
-
-    &:not(:first-child) {
-      margin-left: 2em;
-    }
 
     &.wide {
       width: 230px;
