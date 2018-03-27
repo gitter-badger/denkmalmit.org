@@ -1,5 +1,7 @@
 # denkmalmit.org
 
+[![Join the chat at https://gitter.im/denkmal/denkmalmit.org](https://badges.gitter.im/denkmal/denkmalmit.org.svg)](https://gitter.im/denkmal/denkmalmit.org?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 > Denkmalmit Website
 
 ## Build Setup
